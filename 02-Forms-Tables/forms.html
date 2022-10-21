@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- Action hace referencia a la url a la que nosotros queremos enviar esto -->
+    <form action="results.html" method="GET">
+      <div>
+        <!-- Es poner una etiqueta al input -->
+        <label for="userName">Name</label>
+        <!-- Permite al usuario ingresar datos -->
+        <input name="userName" id="userName" type="text" required />
+      </div>
+      <br />
+      <div>
+        <label for="edad">Cual es tu edad?</label>
+        <input name="edad" id="edad" type="number" min="0" max="200" step="5" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Cual es tu email?</label>
+        <input name="email" id="email" type="email" />
+      </div>
+      <br />
+      <div>
+        <label for="nacimieto">Cual es tu fecha de nacimiento?</label>
+        <input name="nacimiento" id="nacimiento" type="date" />
+      </div>
+      <br />
+      <div>
+        <label for="comentarios">Comentarios</label>
+        <textarea
+          name="comentarios"
+          id="comentarios"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input name="password" id="password" type="password" required />
+      </div>
+      <br />
+      <button type="reset">Reset</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
